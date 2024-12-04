@@ -1,4 +1,5 @@
 # Mediakind_RegInRoll
+(Project implemented in Mediakind as Trainee Developement Engineer)
 API optimisation for roll api to perform regestration in itself
 
 ****As to abide with company's policies, i have only uploaded the code developed by me, instead of uploading whole code base****
