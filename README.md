@@ -13,5 +13,5 @@ the '/reg' API was the first API to be sent for authentication before starting p
 the '/roll' API was used to check the userId against the subscription, expiry date, offers availed and medias eligible for.
 
 New Implementation - '---/v1/roll---' 
-the newly implemented version of /roll is '/v1/roll' which was optimised to authenticate the user by checking the 'Registrations' table before performing the roll specific operations. this become one of the aids to reduce the playback delay. and to allow the backward compatibility, i made this feature to be remotly configurable (RCS) by adding the new-key value pair into XML based RCS - <regInRollEnabled>TorF</regInRollEnabled>.
+the newly implemented version of /roll is '/v1/roll' which was optimised to authenticate the user by checking the 'Registrations' table before performing the roll specific operations (corresponding changes are made in DrmRollController.cpp for 'v1/roll' api and RegisterController.cpp for 'v1/reg' API). this become one of the aids to reduce the playback delay. and to allow the backward compatibility, i made this feature to be remotly configurable (RCS) by adding the new-key value pair into XML based RCS - <regInRollEnabled>TorF</regInRollEnabled>.
 the '/v1/roll' API would then check for RCS key through XMLParser (RCSDataParser()), then performed accordingly/
